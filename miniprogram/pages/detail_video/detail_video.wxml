@@ -1,0 +1,20 @@
+<!--pages/detail_video/detail_video.wxml-->
+<view class="container">
+  <video src="{{detail.address}}" autoplay="true" class="video" object-fit="fill"></video>
+  <view class="info">
+    <view class="title">
+    {{detail.name}}
+    </view>
+    <view class="artist">{{detail.artistName}}</view>
+    <view class="lastinfo">
+      {{detail.playCount}}次播放 - {{detail.publishTime}}
+    </view>
+  </view>
+  <view class="recommand">
+    <view class="suggestText">推荐视频</view>
+    <!-- <recommendCard suggestInfo="{{recommandInfo[0]}}"/> -->
+    <block wx:for="{{recommandInfo}}" wx:key="vid">
+      <recommendCard suggestInfo="{{item}}"/>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--components/video_card.wxml-->
+<view class="container">
+  <view class="pic_box">
+    <image src="{{videoItem.cover}}" class="picture" mode="widthFix"></image>
+    <view class="info">
+      <text class="count">16.4万</text>
+      <text>05:45</text>
+    </view>
+  </view> 
+  <view class="title">{{videoItem.mv.title}}-{{videoItem.artistName}}</view>
+</view>

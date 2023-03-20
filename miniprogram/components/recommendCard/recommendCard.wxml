@@ -1,0 +1,8 @@
+<!--components/recommendCard/recommendCard.wxml-->
+<view class="card" bindtap="OpenDetailVideo" data-id="{{suggestInfo.id}}">
+  <image src="{{suggestInfo.cover}}" class="pic" mode="widthFix"></image>
+  <view class="info">
+    <view class="title">{{suggestInfo.name}}</view>
+    <view class="artist">{{suggestInfo.artistName}}</view>
+  </view>
+</view>

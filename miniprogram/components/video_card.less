@@ -1,0 +1,42 @@
+@import"/assets/iconfont.wxss";
+
+/* components/video_card.wxss */
+.container{
+  padding: 10rpx;
+  width: 355rpx;
+
+  .pic_box {
+    position: relative;
+    .picture{ 
+      border-radius: 18rpx;
+      width: 100%;
+    }
+    .info{
+      position: absolute;
+      bottom: 16rpx;
+      left: 0;
+      right: 0;
+      font-size: 26rpx;
+      color: azure;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 10rpx;
+      padding-right: 10rpx;
+
+      .count::before{
+        font-family: iconfont;
+        content: '\e607';
+      }
+    }
+  }
+  .title{
+    font-size:28rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+  }
+
+}

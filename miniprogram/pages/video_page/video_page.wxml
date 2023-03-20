@@ -1,0 +1,12 @@
+<!--pages/video/video_page.wxml-->
+<scroll-view class="container" scroll-y="true" enable-flex="true" bindscrolltolower="OnLoadingMore"
+refresher-enabled="{{true}}"
+refresher-triggered="{{triggered}}"
+bindrefresherrefresh="OnRefresh">
+  <view class="list" >
+    <block wx:for="{{allItems}}" wx:key="id">
+      <video_card videoItem="{{item}}" bindtap="openVideoDetail" data-item="{{item}}"/>
+    </block>
+  </view>
+  
+</scroll-view>
